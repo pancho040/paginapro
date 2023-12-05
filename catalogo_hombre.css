@@ -1,0 +1,150 @@
+body {
+    background-color: #F5F5DC;
+}
+
+.navbar {
+    background-color: pink !important;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.product-carousel {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.product-carousel img,
+.product-table img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-table {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.product-table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+.barra-lateral {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    right: 0;
+    background-color: #ecdbe8;
+    overflow-y: auto; /* Permitir el scroll vertical */
+    transition: 0.5s;
+    max-height: 80vh; /* Altura máxima del 80% del viewport height */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.barra-lateral h2 {
+    text-align: center;
+    color: #333;
+}
+
+.cerrar-barra-lateral {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.abierta {
+    width: 300px;
+}
+
+.product-table td {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.product-cell {
+    position: relative;
+}
+
+.product-content {
+    margin-bottom: 30px;
+}
+
+.product-name,
+.product-price {
+    margin-bottom: 5px;
+}
+
+.realizar-pedido-btn {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Añadido para asegurar que esté por encima del contenido */
+}
+
+.total-compra {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Añadido para asegurar que esté por encima del contenido */
+}
+
+.comprar-btn {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.carrito-item {
+    position: relative;
+}
+
+.eliminar-item {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: red;
+    cursor: pointer;
+}
+
+/* Nuevos estilos */
+
+.navbar-toggler {
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+}
+
+#toggle-menu {
+    background-color: pink;
+}
+
+@media (max-width: 768px) {
+    #icono-carrito {
+        margin-right: 10px;
+    }
+}
+/* Agrega un nuevo estilo para las pantallas más pequeñas */
+@media (max-width: 576px) {
+    .product-table td {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
