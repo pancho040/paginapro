@@ -9,78 +9,86 @@
 </head>
 
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#">
-        <img src="https://i.ibb.co/tpJsRcL/Group-2-1.png" alt="Logo de la tienda" class="logo">
-    </a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="hombres.html">Hombres</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="mujeres.html">Mujeres</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="registro.html">Productos</a>
-            </li>
-        </ul>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-        </form>
-    </div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="https://i.ibb.co/L65ZhYV/logoweb.png" alt="Logo de la tienda" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="hombres.html">Hombres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mujeres.html">Mujeres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registro.html">Productos</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
     <div class="container">
         <div class="row">
+            <!-- Video Container -->
             <div class="col-md-12">
                 <div class="video-container">
-                    <iframe width="1280" height="720"
-                        src="https://www.youtube.com/embed/is6O29gQde8?autoplay=1&loop=1&controls=0&mute=1" frameborder="0"
+                    <iframe id="videoFrame" width="1280" height="720"
+                        src="https://www.youtube.com/embed/is6O29gQde8?autoplay=1&controls=0&mute=1" frameborder="0"
                         allowfullscreen></iframe>
                 </div>
             </div>
         </div>
         <div class="row text-center">
-            <div class="col-md-3">
+            <div class="col-md-6 col-sm-6">
+                <!-- Imagen Sudaderas -->
                 <a href="catalogo_hombre.html">
                     <img src="https://static.bershka.net/4/static/images/home/2023/0922/chico/slide_man_sweatshirts_-1.jpg?20230927020206"
                         alt="Sudaderas" class="img-thumbnail">
-                    <h2>Sudaderas</h2>
+                    <h2 style="color: Black;">Sudaderas</h2>
                 </a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6 col-sm-6">
+                <!-- Imagen Camisetas -->
                 <a href="catalogo_hombre.html">
                     <img src="https://static.bershka.net/4/static/images/home/2023/0922/chico/slide_man_tshirts_-1.jpg?20230927020206"
                         alt="Camisetas" class="img-thumbnail">
-                    <h2>Camisetas</h2>
+                    <h2 style="color: Black;">Camisetas</h2>
                 </a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6 col-sm-6">
+                <!-- Imagen Pantalones -->
                 <a href="catalogo_hombre.html">
                     <img src="https://static.bershka.net/4/static/images/home/2023/0922/chico/slide_man_pants_-1.jpg?20230927020206"
                         alt="Pantalones" class="img-thumbnail">
-                    <h2>Pantalones</h2>
+                    <h2 style="color: Black;">Pantalones</h2>
                 </a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6 col-sm-6">
+                <!-- Imagen Bolsos -->
                 <a href="catalogo_hombres.html">
                     <img src="https://static.bershka.net/4/static/images/home/2023/0922/chico/slide_man_bags_-1.jpg?20230927020206"
                         alt="Bolsos" class="img-thumbnail">
-                    <h2>Bolsos</h2>
+                    <h2 style="color: Black;">Bolsos</h2>
                 </a>
             </div>
         </div>
 
         <div class="row mt-4">
             <div class="col-md-12">
-                <h2 style="font-family: Segoe UI; text-align: center; font-size: 50px;" class="user-select-none">Get the look</h2>
+                <h2 style="font-family: Segoe UI; text-align: center; font-size: 50px;color:Black ;"
+                    class="user-select-none">Get the look</h2>
             </div>
         </div>
-        
 
-        <div id="myCarousel" class="carousel slide mt-4" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide mt-4" data-ride="carousel" data-interval="3000">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -90,15 +98,17 @@
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://static.bershka.net/4/static/images/bershkastyle/style_chico_streetwear.jpg?0809?t=20230927020206"
+                    <img
+                        src="https://static.bershka.net/4/static/images/bershkastyle/style_chico_streetwear.jpg?0809?t=20230927020206"
                         alt="Streetwear" style="width: 100%; height: auto;">
                     <div class="carousel-caption">
-                        <h2 style="font-family: Segoe UI; text-align: center; color: white; font-size: 65px;">Streetwear
+                        <h2 style="font-family: Segoe UI; text-align: center; color: white; font-size: 65px;">Street
                         </h2>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://static.bershka.net/4/static/images/bershkastyle/style_chico_casual.jpg?0809?t=20230927020206"
+                    <img
+                        src="https://static.bershka.net/4/static/images/bershkastyle/style_chico_casual.jpg?0809?t=20230927020206"
                         alt="Casual" style="width: 100%; height: auto;">
                     <div class="carousel-caption">
                         <h2 style="font-family: Segoe UI; text-align: center; color: white; font-size: 65px;">Casual
@@ -106,7 +116,8 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://static.bershka.net/4/static/images/bershkastyle/style_chico_trendy.jpg?0809?t=20230927020206"
+                    <img
+                        src="https://static.bershka.net/4/static/images/bershkastyle/style_chico_trendy.jpg?0809?t=20230927020206"
                         alt="Trendy" style="width: 100%; height: auto;">
                     <div class="carousel-caption">
                         <h2 style="font-family: Segoe UI; text-align: center; color: white; font-size: 65px;">Trendy
@@ -114,7 +125,8 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://static.bershka.net/4/static/images/bershkastyle/style_chico_formal.jpg?0809?t=20230927020206"
+                    <img
+                        src="https://static.bershka.net/4/static/images/bershkastyle/style_chico_formal.jpg?0809?t=20230927020206"
                         alt="Formal" style="width: 100%; height: auto;">
                     <div class="carousel-caption">
                         <h2 style="font-family: Segoe UI; text-align: center; color: white;font-size: 65px;">Formal</h2>
@@ -136,35 +148,34 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <h3>Redes Sociales</h3>
+                        <h3 style=color:Black>Redes Sociales</h3>
                         <ul class="social-icons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li style=color:Black><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li style=color:Black><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li style=color:Black><a href="#"><i class="fa fa-instagram"></i></a></li>
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <h3>Contacto</h3>
-                        <p><i class="fa fa-phone"></i> +123456789</p>
-                        <p><i class="fa fa-envelope"></i> univalle.edu</p>
+                        <h3 style=color:Black>Contacto</h3>
+                        <p style=color:Black><i class="fa fa-phone"></i> +123456789</p>
+                        <p style=color:Black><i class="fa fa-envelope"></i> univalle.edu</p>
                     </div>
                     <div class="col-md-4">
-                        <h3>Enlaces útiles</h3>
+                        <h3 style=color:Black>Enlaces útiles</h3>
                         <ul>
-                            <li><a href="#">Términos y Condiciones</a></li>
-                            <li><a href="#">Política de Privacidad</a></li>
+                            <li style=color:Black><a href="#">Términos y Condiciones</a></li>
+                            <li style=color:Black><a href="#">Política de Privacidad</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </footer>
-        
+
     </div>
 
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
-
-
