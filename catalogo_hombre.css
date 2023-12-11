@@ -3,7 +3,7 @@ body {
 }
 
 .navbar {
-    background-color: pink !important;
+    background-color: #fbf0e8 !important;
 }
 
 .container {
@@ -102,7 +102,7 @@ body {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2; /* Añadido para asegurar que esté por encima del contenido */
+    z-index: 2;
 }
 
 .comprar-btn {
@@ -124,7 +124,6 @@ body {
     cursor: pointer;
 }
 
-/* Nuevos estilos */
 
 .navbar-toggler {
     color: white;
@@ -141,7 +140,6 @@ body {
         margin-right: 10px;
     }
 }
-/* Agrega un nuevo estilo para las pantallas más pequeñas */
 @media (max-width: 576px) {
     .product-table td {
         flex-basis: 50%;
