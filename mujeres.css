@@ -84,12 +84,72 @@ body {
     margin-right: auto;
 }
 
+/* Estilos para el footer */
+footer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+footer h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #007bff;
+}
+
+footer .social-icons {
+    margin: 0;
+    padding: 0;
+}
+
+footer .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer .social-icons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+footer .social-icons li a:hover {
+    background-color: #162536;
+}
+
+footer p {
+    margin: 0;
+}
+
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 767px) {
     .navbar-nav a,
     .form-inline input,
     .form-inline button {
-        font-size: 18px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+        font-size: 22px; /* Ajusta el tamaño de fuente para dispositivos móviles */
     }
 
     /* Aumenta el tamaño de fuente al desplegar las opciones de la barra de navegación */
@@ -110,10 +170,61 @@ body {
     .navbar-collapse {
         max-height: 300px; /* Ajusta según sea necesario */
     }
+    .carousel-inner img {
+        display: block;
+        margin: 0 auto;
+        width: 350px; /* Ajusta el ancho al 100% para que todas las imágenes tengan el mismo ancho */
+        height: 400px;
+    }
 
     /* Establecer dos columnas para las imágenes en dispositivos móviles */
     .text-center .col-md-6 {
         flex: 0 0 50%;
         max-width: 50%;
     }
+    .video-container {
+        padding-top: 0;
+        margin-top: 1;
+    }
+
+    .video-container video {
+        width: 100%; /* Haz que el video ocupe el 100% del ancho del contenedor */
+        max-height: 190px; /* Ajusta la altura máxima según sea necesario */
+    }
+    footer {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    /* Estilos para las columnas del footer en dispositivos móviles */
+    footer .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    /* Estilos para los íconos de redes sociales en el footer en dispositivos móviles */
+    footer .social-icons {
+        text-align: center;
+    }
+
+    footer .social-icons li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    footer .social-icons li a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #333;
+        color: #fff;
+        transition: background-color 0.3s;
+    }
+
+    footer .social-icons li a:hover {
+        background-color: #1b2026;
+    }
+    
 }
