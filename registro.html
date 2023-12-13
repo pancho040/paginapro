@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Agregar Productos - Catálogo de Ropa para Hombres</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="registro.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="https://i.ibb.co/L65ZhYV/logoweb.png" alt="Logo de la tienda" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="hombres.html">Hombres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mujeres.html">Mujeres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registro.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="usuarios.html">Usuarios</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container ">
+        <h2>Agregar Producto</h2>
+        <form id="productForm">
+            <div class="form-group">
+                <label for="productName">Nombre del Producto</label>
+                <input type="text" class="form-control" id="productName" name="productName" required>
+            </div>
+            <div class="form-group">
+                <label for="productPrice">Precio</label>
+                <input type="number" class="form-control" id="productPrice" name="productPrice" required>
+            </div>
+            <div class="form-group">
+                <label for="productImage">URL de la Imagen</label>
+                <input type="url" class="form-control" id="productImage" name="productImage" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar Producto</button>
+        </form>
+        <h2>Productos Registrados</h2>
+        <table class="table product-table">
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody id="productList">
+                <tr>
+                    <td>
+                        <img src="https://static.bershka.net/4/photos2/2023/I/0/2/p/6703/514/800/65a8cd4cdce6261dabcd0363e4ce8b98-6703514800_2_4_0.jpg?cropfixwidth=2052&imwidth=750&impolicy=bershka-crop-fix-width-itxmediumhigh&imformat=chrome"
+                            alt="Producto 1">
+                    </td>
+                    <td>Jeans straight</td>
+                    <td>99$</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://static.bershka.net/4/photos2/2023/I/0/2/p/7454/190/251/80ff22184eee93ac1cb07727a06fb710-7454190251_2_4_0.jpg?cropfixwidth=2052&imwidth=750&impolicy=bershka-crop-fix-width-itxmediumhigh&imformat=chrome"
+                            alt="Producto 2">
+                    </td>
+                    <td>Jeans straight</td>
+                    <td>85$</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://static.bershka.net/4/photos2/2023/I/0/2/p/7454/190/800/6cd72f8f5841ce89b8be561909b96a3d-7454190800_2_4_0.jpg?cropfixwidth=2052&imwidth=750&impolicy=bershka-crop-fix-width-itxmediumhigh&imformat=chrome"
+                            alt="Producto 3">
+                    </td>
+                    <td>Jeans straight</td>
+                    <td>70$</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://static.bershka.net/4/photos2/2023/I/0/2/p/1535/737/800/f5e85b2a1871a4507eed5887f7c7d778-1535737800_2_3_0.jpg?cropfixwidth=2052&imwidth=750&impolicy=bershka-crop-fix-width-itxmediumhigh&imformat=chrome"
+                            alt="Producto 4">
+                    </td>
+                    <td>Jeans straight</td>
+                    <td>90$</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://static.bershka.net/4/photos2/2023/I/0/2/p/1535/737/818/29d6b25a7e17bd07a0057a3128f4ae89-1535737818_2_4_0.jpg?cropfixwidth=2052&imwidth=750&impolicy=bershka-crop-fix-width-itxmediumhigh&imformat=chrome"
+                            alt="Producto 5">
+                    </td>
+                    <td>Jeans straight</td>
+                    <td>90$</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://static.bershka.net/4/photos2/2023/I/0/2/p/1535/737/251/ed92ac997fce87e67b37235766b5a2d8-1535737251_2_4_0.jpg?cropfixwidth=2052&imwidth=750&impolicy=bershka-crop-fix-width-itxmediumhigh&imformat=chrome"
+                            alt="Producto 6">
+                    </td>
+                    <td>Jeans straight</td>
+                    <td>98$</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://static.bershka.net/4/photos2/2023/I/0/2/p/6682/677/800/826d2966104ffbaeadb507299cdc4936-6682677800_2_4_0.jpg?cropfixwidth=2052&imwidth=750&impolicy=bershka-crop-fix-width-itxmediumhigh&imformat=chrome"
+                            alt="Producto 7">
+                    </td>
+                    <td>Jeans straight</td>
+                    <td>94$</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://static.bershka.net/4/photos2/2023/I/0/2/p/7387/190/250/16613102a3c6805786b9622e32bcc942-7387190250_2_4_0.jpg?cropfixwidth=2052&imwidth=750&impolicy=bershka-crop-fix-width-itxmediumhigh&imformat=chrome"
+                            alt="Producto 8">
+                    </td>
+                    <td>Jeans straight</td>
+                    <td>90$</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://static.bershka.net/4/photos2/2023/I/0/2/p/7387/190/594/218709265564e655e696a378646ed832-7387190594_2_4_0.jpg?cropfixwidth=2052&imwidth=750&impolicy=bershka-crop-fix-width-itxmediumhigh&imformat=chrome"
+                            alt="Producto 9">
+                    </td>
+                    <td>Jeans straight</td>
+                    <td>77$</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://static.bershka.net/4/photos2/2023/I/0/2/p/7420/003/818/4d092eee5384b0dca5bb2aa7e29540b3-7420003818_2_4_0.jpg?cropfixwidth=2052&imwidth=750&impolicy=bershka-crop-fix-width-itxmediumhigh&imformat=chrome"
+                            alt="Producto 10">
+                    </td>
+                    <td>Jeans straight</td>
+                    <td>99$</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="registro.js"></script>
+</body>
+
+</html>

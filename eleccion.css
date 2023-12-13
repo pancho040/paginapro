@@ -1,0 +1,80 @@
+.btn-hover {
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.btn-hover:hover {
+    background-color: #715c40; 
+    color: #ffffff; 
+}
+
+body {
+    background-color: #fbf0e8 ;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.user-select-none {
+    user-select: none;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.custom-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%; 
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+    width: 200px;
+}
+
+.gender-section {
+    margin-bottom: 30px; 
+}
+
+@media (max-width: 720px) { 
+    .custom-image {
+        max-width: 100%;
+        height: auto; 
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1024px) {
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .gender-section {
+        margin-bottom: 40px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

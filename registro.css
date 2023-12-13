@@ -1,0 +1,100 @@
+
+body {
+    background-color: #f2f2f2;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 200px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.product-table td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.product-table img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    max-height: 300px;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav a,
+    .form-inline input,
+    .form-inline button {
+        font-size: 22px; 
+    }
+
+    .navbar-collapse.show .navbar-nav a {
+        font-size: 22px;
+    }
+
+
+    .form-inline input {
+        font-size: 16px;
+    }
+
+    .form-inline button {
+        font-size: 16px;
+    }
+
+    
+    .navbar-collapse {
+        max-height: 300px; 
+    }
+
+    h2 {
+        font-size: 24px; 
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+
+    .container {
+        margin-top: 50px;
+        padding: 40px;
+    }
+
+    .product-table {
+        margin-top: 30px;
+    }
+
+    .product-table td {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .product-table img {
+        max-width: 100%;
+        max-height: 200px;
+        margin-bottom: 15px;
+    }
+}
+
+
+

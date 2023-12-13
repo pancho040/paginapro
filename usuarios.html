@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Panel Administrativo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="usuarios.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="https://i.ibb.co/L65ZhYV/logoweb.png" alt="Logo de la tienda" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="hombres.html">Hombres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mujeres.html">Mujeres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registro.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="usuarios.html">Usuarios</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    <div>" "</div><div>" "</div>
+    <div class="container">
+        <img src="https://i.ibb.co/L65ZhYV/logoweb.png" alt="Logo de la tienda" class="logo">
+        <h1 style="color: Black;" >Panel Administrativo</h1>
+        <div class="card">
+            <div class="card-body">
+                <h2>Registro de Usuarios</h2>
+                <form id="userForm">
+                    <div class="form-group">
+                        <label for="nombre" data-toggle="tooltip" title="Ingresa el nombre del usuario">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-toggle="tooltip" title="Ingresa el correo electrónico del usuario">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Correo Electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="imagen" data-toggle="tooltip" title="Ingresa la URL de la imagen del usuario">Imagen (URL):</label>
+                        <input type="url" class="form-control" id="imagen" placeholder="URL de la imagen" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contrasena" data-toggle="tooltip" title="Ingresa la contraseña del usuario">Contraseña:</label>
+                        <input type="password" class="form-control" id="contrasena" placeholder="Contraseña" required>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Registrar Usuario</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2>Usuarios Registrados</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Correo Electrónico</th>
+                        </tr>
+                    </thead>
+                    <tbody id="userList">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="usuarios.js"></script>
+</body>
+
+</html>
